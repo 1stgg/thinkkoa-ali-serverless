@@ -1,0 +1,67 @@
+{
+  "name": "thinkkoa-ali-serverless",
+  "version": "2.4.14",
+  "description": "A lightweight, scalable for agile development Node.js web framework, based on koa2.",
+  "scripts": {
+    "test": "npm run test-cov",
+    "test-cov": "istanbul cover ./node_modules/mocha/bin/_mocha -- -t 5000 --recursive  -R spec test/{,**/}*.test.js",
+    "eslint": "eslint lib/"
+  },
+  "main": "./lib/thinkkoa.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkkoa/thinkkoa.git"
+  },
+  "keywords": [
+    "web",
+    "nodejs",
+    "framework",
+    "mvc",
+    "es6",
+    "koa",
+    "restful",
+    "agile",
+    "think",
+    "thinkkoa"
+  ],
+  "engines": {
+    "node": ">8.0.0"
+  },
+  "author": {
+    "name": "richenlin",
+    "email": "richenlin@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thinkkoa/thinkkoa/issues"
+  },
+  "homepage": "https://github.com/thinkkoa/thinkkoa",
+  "devDependencies": {
+    "async": "^3.1.0",
+    "eslint": "^6.5.1",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^6.2.2",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "koa": "^2.10.0",
+    "think_controller": "^2.x.x",
+    "think_lib": "^2.x.x",
+    "think_loader": "^2.x.x",
+    "think_logger": "^2.x.x",
+    "think_payload": "^2.x.x",
+    "think_router": "^2.x.x",
+    "think_static": "^2.x.x",
+    "think_trace": "^2.x.x"
+  },
+  "maintainers": [
+    {
+      "name": "richenlin",
+      "email": "richenlin@gmail.com"
+    },
+    {
+      "name": "richerdlee",
+      "email": "richerdlee@163.com"
+    }
+  ]
+}
